@@ -32,8 +32,14 @@
 	top: 0;
 	right: 0;
 	border: 20px solid transparent;
-	border-top: 20px solid #222;
-	border-right: 20px solid #222;
+	border-top: 20px solid #4e132c;
+	border-right: 20px solid #4e132c;
+}
+
+.services .container .card.active::before
+{
+	border-top: 20px solid #36061a;
+	border-right: 20px solid #36061a;
 }
 
 .services .container .card .icon
@@ -58,6 +64,11 @@
 	overflow: hidden;
 }
 
+.services .container .card.active .content
+{
+	height: auto;
+}
+
 .services .container .card .content::before
 {
 	content: '';
@@ -66,14 +77,19 @@
 	left: 0;
 	width: 100%;
 	height: 100px;
-	background: linear-gradient(transparent, #ffffff20);
+	background: linear-gradient(transparent, #24263d);
+}
+
+.services .container .card.active .content::before
+{
+	display: none;
 }
 
 .services .container .card .more
 {
 	position: relative;
 	padding: 10px 15px;
-	background: #8f243d;
+	background: #4e132c;
 	margin-top: 15px;
 	display: inline-block;
 	cursor: pointer;
@@ -84,7 +100,18 @@
 	font-size: 14px;
 }
 
+.services .container .card.active .more
+{
+	background: #36061a;
+	color: #eee;
+}
+
 .services .container .card .more::before
 {
 	content: 'Read more';
+}
+
+.services .container .card.active .more::before
+{
+	content: 'Read Less';
 }
