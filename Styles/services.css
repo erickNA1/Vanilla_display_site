@@ -1,0 +1,90 @@
+.services
+{
+	background: url(../images/nightsky.png);
+}
+
+.services .container
+{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.services .container .card
+{
+	position: relative;
+	width: 300px;
+	padding: 20px;
+	margin: 20px;
+	background: rgba(255,255,255,0.3);
+	backdrop-filter: blur(3px);
+	
+}
+
+.services .container .card::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 20px solid transparent;
+	border-top: 20px solid #222;
+	border-right: 20px solid #222;
+}
+
+.services .container .card .icon
+{
+	margin-bottom: 10px;
+}
+
+.services .container .card .icon img
+{
+	max-width: 90px; 
+}
+
+.services .container .card .content p
+{
+	opacity: 1;
+}
+
+.services .container .card .content
+{
+	position: relative;
+	height: 215px;
+	overflow: hidden;
+}
+
+.services .container .card .content::before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(transparent, #ffffff20);
+}
+
+.services .container .card .more
+{
+	position: relative;
+	padding: 10px 15px;
+	background: #8f243d;
+	margin-top: 15px;
+	display: inline-block;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #eee;
+	font-weight: 500;
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+.services .container .card .more::before
+{
+	content: 'Read more';
+}
